@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fefaf6;
+    color: #333;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px 5%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-buttons a:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Sections */
+section {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+/* Upload Section */
+.upload-container select, .upload-container button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.upload-icons img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.upload-button {
+    background: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
