@@ -75,3 +75,10 @@ section {
     border-radius: 25px;
     cursor: pointer;
 }
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

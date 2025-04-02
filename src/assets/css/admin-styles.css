@@ -1,59 +1,39 @@
-@charset "UTF-8";
-    /* Admin Panel Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
-/* Header */
+/* Admin Panel Styles */
 .admin-header {
     display: flex;
     justify-content: space-between;
-    background: #222;
-    color: white;
-    padding: 15px 20px;
     align-items: center;
-}
-
-.admin-header h2 {
-    margin: 0;
+    background: #007bff;
+    padding: 15px;
+    color: white;
 }
 
 .logout-btn {
-    text-decoration: none;
+    background: red;
     color: white;
-    background: #d9534f;
     padding: 8px 15px;
+    text-decoration: none;
     border-radius: 5px;
 }
 
-.logout-btn:hover {
-    background: #c9302c;
-}
-
-/* Container */
 .admin-container {
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Table */
+h3 {
+    margin-top: 20px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin-top: 10px;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 th {
@@ -61,31 +41,47 @@ th {
     color: white;
 }
 
-/* Buttons */
 .edit-btn, .delete-btn {
-    padding: 8px 12px;
+    padding: 5px 10px;
+    margin: 2px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
 }
 
 .edit-btn {
     background: #ffc107;
-    color: #333;
+    color: black;
 }
 
 .delete-btn {
-    background: #d9534f;
+    background: red;
     color: white;
 }
 
-.edit-btn:hover {
-    background: #e0a800;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
 
-.delete-btn:hover {
-    background: #c9302c;
+    th {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+    }
+
+    td:last-child {
+        border-bottom: none;
+    }
 }
-    
-    
